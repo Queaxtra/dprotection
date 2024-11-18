@@ -1,0 +1,57 @@
+{
+  "name": "dprotection",
+  "version": "1.0.0",
+  "description": "Advanced DDoS protection middleware for Express.js applications with comprehensive security features",
+  "main": "dist/index.js",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts",
+    "test": "bun test",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queaxtra/dprotection.git"
+  },
+  "keywords": [
+    "ddos",
+    "protection",
+    "security",
+    "express",
+    "middleware",
+    "rate-limit",
+    "typescript"
+  ],
+  "author": "queaxtra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/queaxtra/dprotection/issues"
+  },
+  "homepage": "https://github.com/queaxtra/dprotection#readme",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "eslint": "^9.15.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/winston": "^2.4.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^8.0.0",
+    "rate-limiter-flexible": "^5.0.0",
+    "winston": "^3.11.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  }
+}
